@@ -1,0 +1,14 @@
+:root {
+  --primary-accent: #fd6e0a;
+  --text-primary: #181818;
+  --text-secondary: #474747;
+  --text-tertiary: #757575;
+  --background-color: #fff;
+  --background-color-alt: #fff8f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
