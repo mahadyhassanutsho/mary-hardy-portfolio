@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
 :root {
   --primary-accent: #fd6e0a;
   --text-primary: #181818;
@@ -5,10 +7,125 @@
   --text-tertiary: #757575;
   --background-color: #fff;
   --background-color-alt: #fff8f3;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: var(--font-regular);
+}
+
+#hero {
+  background-image: url("../images/developer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 10%;
+  background-color: var(--background-color-alt);
+}
+
+#hero-contents {
+  padding: 2rem 0 0 1rem;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+#logo {
+  font-size: 45px;
+  font-weight: var(--font-extra-bold);
+  color: var(--text-primary);
+}
+
+#logo > span {
+  color: var(--primary-accent);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.nav-item > a {
+  color: var(--text-secondary);
+  font-size: 20px;
+  font-weight: var(--font-regular);
+  transition: color ease-in-out 0.25s;
+}
+
+.nav-item > a:hover {
+  color: var(--primary-accent);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.65rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  transition: all ease-in-out 0.45s;
+}
+
+.btn-primary {
+  color: var(--background-color);
+  background-color: var(--primary-accent);
+  border: 1px solid var(--primary-accent);
+}
+
+.btn-primary:hover {
+  color: var(--primary-accent);
+  background-color: var(--background-color);
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#intro-img {
+  width: 55%;
+  align-self: flex-end;
+}
+
+#intro-infos {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#intro-infos > h2 {
+  font-size: 45px;
+  font-weight: var(--font-semi-bold);
+}
+
+#intro-infos > h1 {
+  font-size: 85px;
+  font-weight: var(--font-bold);
 }
